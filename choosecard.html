@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your E-Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src=".//images/404.png" alt="" width="130"/></a>
+        </div>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="aboutus.html"><li>About us</li></a>
+                <a href="contactus.html"><li>Contact us</li></a>
+            </ul>
+        </nav>
+    </div>
+
+    <h2 class="first-step-header">Let´s choose an image first!</h2>
+    <div id="img-container">
+        <h2 class="img-category">Christmas</h2>
+        <br>
+        <img class="img-choice" src="./images/christmas1.jpg">
+        <img class="img-choice" src="./images/christmas2.jpg">
+        <img class="img-choice" src="./images/christmas3.jpg">
+        <img class="img-choice" src="./images/christmas4.jpg">
+        <img class="img-choice" src="./images/christmas5.jpg">
+        <br>
+        <h2 class="img-category">Easter</h2>
+        <img class="img-choice" src="./images/easter1.jpg">
+        <img class="img-choice" src="./images/easter2.jpg">
+        <img class="img-choice" src="./images/easter3.jpg">
+        <img class="img-choice" src="./images/easter4.jpg">
+        <img class="img-choice" src="./images/easter5.jpg">
+        <br>
+        <h2 class="img-category">Birthday</h2>
+        <img class="img-choice" src="./images/birthday1.jpg">
+        <img class="img-choice" src="./images/birthday2.jpg">
+        <img class="img-choice" src="./images/birthday3.jpg">
+        <img class="img-choice" src="./images/birthday4.jpg">
+        <img class="img-choice" src="./images/birthday5.jpg">
+        <br>
+        <h2 class="img-category">Summer vacations</h2>
+        <img class="img-choice" src="./images/summer1.jpg">
+        <img class="img-choice" src="./images/summer2.jpg">
+        <img class="img-choice" src="./images/summer3.jpg">
+        <img class="img-choice" src="./images/summer4.jpg">
+        <img class="img-choice" src="./images/summer5.jpg">
+        <br>
+        <h2 class="img-category">Weddings</h2>
+        <img class="img-choice" src="./images/wedding1.jpg">
+        <img class="img-choice" src="./images/wedding2.jpg">
+        <img class="img-choice" src="./images/wedding3.jpg">
+        <img class="img-choice" src="./images/wedding4.jpg">
+        <img class="img-choice" src="./images/wedding5.jpg">
+    </div>
+
+    <div>
+        <h2>Here is a preview of your card!</h2>
+        <div id="front-pvw-card">
+            <p id="front-msg-pvw"></p>
+        </div>
+    </div>
+    <h2>Now let´s create the back of your card!</h2>
+
+    <section>
+        <div id="back-form">
+            <label for="from" class="to">From:</label>
+            <input class="to" type="text" name="from" id="from" placeholder="Sender">
+            <br><br><br>
+            <label for="to" class="to">To:</label>
+            <input class="to" type="text" name="to" id="to" placeholder="Recipient">
+            <br><br><br>
+            <label for="back-message" class="to">Write your message:</label>
+            <br>
+            <textarea name="back-message" id="back-message" class="to" placeholder="Your message..."></textarea>
+        </div>
+        <div id="back-preview">
+            <h2>The preview of the back side is here:</h2>
+            <div id="back-pvw-card">
+                <div id="left-side">
+                    <p id="back-msg-pvw"></p>
+                </div>
+
+                <div id="right-side">
+                    <h3>From:</h3>
+                    <div id="sender"></div>
+                    <br>
+                    <h3>To:</h3>
+                    <div id="recipient"></div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <a class="main-btn" href="result.html" onclick="generateCard()">Make my e-Card!</a>
+
+    </section>
+
+
+
+
+
+    <div class="footer">
+        <div>
+            <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="aboutus.html"><li>About us</li></a>
+            <a href="contactus.html"><li>Contact us</li></a>
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
