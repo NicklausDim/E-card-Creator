@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create your E-card</title>
+    <title>Contact Form</title>
     <link rel="stylesheet" href="style.css">
-    <script async src="main.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="container">
@@ -20,54 +20,92 @@
             </ul>
         </nav>
     </div>
+    <h1>Contact us!</h1>
 
-    <label for="custom-url" class="to"><h2>Import your own link:</h2></label>
-    <input class="to" type="text" name="custom-url" id="custom-url" placeholder="Type URL Here...">
-    <input class="updateButton" type="button" onclick="addCustomURL()" value="Update">
+    <section id="register">
+        <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+            alt="broken">
 
-    <br>
-    <div>
-        <h2>Here is a preview of your card!</h2>
-        <div id="front-pvw-card">
-            <p id="front-msg-pvw"></p>
-        </div>
-    </div>
-    <h2>Now let´s create the back of your card!</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
 
-    <section>
-        <div id="back-form">
-            <label for="from" class="to">From:</label>
-            <input class="to" type="text" name="from" id="from" placeholder="Sender">
-            <br><br><br>
-            <label for="to" class="to">To:</label>
-            <input class="to" type="text" name="to" id="to" placeholder="Recipient">
-            <br><br><br>
-            <label for="back-message" class="to">Write your message:</label>
-            <br>
-            <textarea name="back-message" id="back-message" class="to" placeholder="Your message..."></textarea>
-        </div>
-        <div id="back-preview">
-            <h2>Your preview will be here:</h2>
-            <div id="back-pvw-card">
-                <div id="left-side">
-                    <p id="back-msg-pvw"></p>
-                </div>
+                <section class="form-row">
+                    <label for="fNAme">First Name</label>
+                    <input name="firstName" type="text" placeholder="Name" id="fNAme">
+                </section>
+                <section class="form-row">
+                    <label for="lNAme">Last Name</label>
+                    <input name="lastNAme" type="text" placeholder="Last Name" id="lName">
+                </section>
 
-                <div id="right-side">
-                    <h3>From:</h3>
-                    <div id="sender"></div>
-                    <br>
-                    <h3>To:</h3>
-                    <div id="recipient"></div>
-                </div>
-            </div>
-        </div>
-        <br><br><br>
-        <a id="submit-btn" class="main-btn" href="result.html" onclick="generateCard()">Make my e-Card!</a>
+                <section class="form-row">
+                    <label for="bDate">Birth Date</label>
+                    <input type="date" id="bDtate" min="1900-01-01" max="2000-12-31">
+                </section>
+            </fieldset>
 
+            <fieldset>
+                <legend>Contact Info</legend>
+                <section class="form-row">
+                    <label for="cities">City</label>
+                    <select id="cities">
+                        <optgroup label="NRW">
+                            <option value="Dusseldorf">Dusseldorf</option>
+                            <option value="Neuss">Neuss</option>
+                        </optgroup>
+
+                        <optgroup label="Berlin">
+                            <option value="Berlin">Berlin</option>
+                        </optgroup>
+
+                        <optgroup label="Bayarn">
+                            <option value="Munchen">Munchen</option>
+                            <option value="Ulm">Ulm</option>
+                            <option value="Nurnberg">Nurnberg</option>
+                        </optgroup>
+                    </select>
+                </section>
+
+                <section class="form-row">
+                    <label for="street">Street</label>
+                    <input id="street" type="text" minlength="3" maxlength="30" placeholder="Sample Street">
+                </section>
+
+                <section class="form-row">
+                    <label for="hauseNo">Hause Number</label>
+                    <input id="hausNo" type="text" placeholder="123/A">
+                </section>
+
+                <section class="form-row">
+                    <label for="plz">Post Code</label>
+                    <input type="number" id="plz" min="10000" max="99999" placeholder="41460">
+                </section>
+
+                <section class="form-row">
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" id="tel" placeholder="+49 176 444 44 44">
+                </section>
+
+                <section class="form-row">
+                    <label for="mail">e-mail</label>
+                    <input name="email" type="email" placeholder="email@email.com" id="mail">
+                </section>
+
+            </fieldset>
+
+            <fieldset>
+                <section class="form-row">
+                    <label>Your message:</label>
+                    <textarea name="Text1" cols="20" rows="3"></textarea>
+                </section>
+
+            </fieldset>
+
+            <a href="thankyou.html"><input id="submit" type="button" value="Submit"></a>
+
+        </form>
     </section>
-
-
     <div class="footer">
         <div>
             <ul>
