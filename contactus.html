@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 </head>
 <body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="5xVHqdAw"></script>
     <div class="container">
         <div class="logo">
             <a href="index.html"><img src=".//images/404.png" alt="" width="130"/></a>
@@ -20,99 +21,38 @@
             </ul>
         </nav>
     </div>
-    <h1>Contact us!</h1>
 
-    <section id="register">
-        <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-            alt="broken">
+    <div class="welcomeLine">
+        <h3 class="title">Welcome to our eCard creator. Let´s create your eCard!</h3>
+    </div>
 
-        <form>
-            <fieldset>
-                <legend>Personal Info</legend>
+    <div class="options">
 
-                <section class="form-row">
-                    <label for="fNAme">First Name</label>
-                    <input name="firstName" type="text" placeholder="Name" id="fNAme">
-                </section>
-                <section class="form-row">
-                    <label for="lNAme">Last Name</label>
-                    <input name="lastNAme" type="text" placeholder="Last Name" id="lName">
-                </section>
+        <div class="box1">
+            <h2 class="choice">Choose one of our eCards!</h2>
+            <div>
+                <a href="choosecard.html"><img class="optionsImage" src="https://image.freepik.com/free-vector/merry-christmas-tree-with-lettering-decoration_23-2148386159.jpg"></a>
+            </div>
+        </div>
 
-                <section class="form-row">
-                    <label for="bDate">Birth Date</label>
-                    <input type="date" id="bDtate" min="1900-01-01" max="2000-12-31">
-                </section>
-            </fieldset>
 
-            <fieldset>
-                <legend>Contact Info</legend>
-                <section class="form-row">
-                    <label for="cities">City</label>
-                    <select id="cities">
-                        <optgroup label="NRW">
-                            <option value="Dusseldorf">Dusseldorf</option>
-                            <option value="Neuss">Neuss</option>
-                        </optgroup>
+        <div class="box2">
+            <h2 class="choice">Choose your own image eCard!</h2>
+            <div>
+                <a href="linkcard.html"><img class="optionsImage" src="https://cf.ltkcdn.net/family/images/std/200821-425x283-family.jpg"></a>
 
-                        <optgroup label="Berlin">
-                            <option value="Berlin">Berlin</option>
-                        </optgroup>
+            </div>
+        </div>
+    </div>
+    <p class="share">Did you enjoy our webpage? Sharing is caring!</p>
+    <div class="fb-share-button" data-href="https://nicklausdim.github.io/E-card-Creator/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnicklausdim.github.io%2FE-card-Creator%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 
-                        <optgroup label="Bayarn">
-                            <option value="Munchen">Munchen</option>
-                            <option value="Ulm">Ulm</option>
-                            <option value="Nurnberg">Nurnberg</option>
-                        </optgroup>
-                    </select>
-                </section>
-
-                <section class="form-row">
-                    <label for="street">Street</label>
-                    <input id="street" type="text" minlength="3" maxlength="30" placeholder="Sample Street">
-                </section>
-
-                <section class="form-row">
-                    <label for="hauseNo">Hause Number</label>
-                    <input id="hausNo" type="text" placeholder="123/A">
-                </section>
-
-                <section class="form-row">
-                    <label for="plz">Post Code</label>
-                    <input type="number" id="plz" min="10000" max="99999" placeholder="41460">
-                </section>
-
-                <section class="form-row">
-                    <label for="tel">Phone Number</label>
-                    <input type="tel" id="tel" placeholder="+49 176 444 44 44">
-                </section>
-
-                <section class="form-row">
-                    <label for="mail">e-mail</label>
-                    <input name="email" type="email" placeholder="email@email.com" id="mail">
-                </section>
-
-            </fieldset>
-
-            <fieldset>
-                <section class="form-row">
-                    <label>Your message:</label>
-                    <textarea name="Text1" cols="20" rows="3"></textarea>
-                </section>
-
-            </fieldset>
-
-            <a href="thankyou.html"><input id="submit" type="button" value="Submit"></a>
-
-        </form>
-    </section>
     <div class="footer">
         <div>
             <ul>
             <a href="index.html"><li>Home</li></a>
             <a href="aboutus.html"><li>About us</li></a>
             <a href="contactus.html"><li>Contact us</li></a>
-
             </ul>
         </div>
     </div>
