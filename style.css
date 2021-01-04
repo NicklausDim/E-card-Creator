@@ -458,7 +458,8 @@ input,
 
 .fb-share-button {
     margin-left: 46vw;
-    margin-top: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 20vh;
 }
 .share {
     text-align: center;
