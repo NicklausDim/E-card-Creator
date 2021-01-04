@@ -1,469 +1,62 @@
-/*Body styling*/
-body {
-    background-color: wheat;
-} 
-* {
-    transition: all 0.3s ease-in-out;
-}
-/*Logo styling and navigation bar*/
-.container {
-    clear: both;
-    overflow: auto;
-    background-color: rgb(162, 162, 247);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="5xVHqdAw"></script>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src=".//images/404.png" alt="" width="130"/></a>
+        </div>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="aboutus.html"><li>About us</li></a>
+                <a href="contactus.html"><li>Contact us</li></a>
+            </ul>
+        </nav>
+    </div>
 
-nav {
-    float: right;
-}
+    <div class="welcomeLine">
+        <h3 class="title">Welcome to our eCard creator. Let´s create your eCard!</h3>
+    </div>
 
-.logo img {
-    float: left;
-    border-radius: 15px;
-    margin-top: 5px;
-    
-}
+    <div class="options">
 
-ul li {
-    display: inline-block;
-    padding: 10px;
-    font-size: 20px;
-    font-family: raleway;
-    color: red;
-}
-
-ul li:hover {
-    color: orange;
-}
-/*Headline and and title styling*/
-.welcomeLine {
-    width: 100vw;
-    height: 5vh;
-    margin-bottom: 10px;
-}
-
-.title {
-    text-align: center;
-    animation:blinking 1.5s infinite;
-    font-size: 25px;
-}
-
-@keyframes blinking{
-    0%{   color: red;   }
-    47%{   color: #000; }
-    62%{   color: green; }
-    97%{   color:orange; }
-    100%{  color: #000;   }
-    }
-/*Styling of the background of the main options index.html*/
-.options {
-    background-image: url("backgroundindex.jpg");
-    justify-content: center;
-    width: 90vw;
-    height: 100vh;
-    margin: auto;
-    text-align:center;
-
-}
-/*Styling of the two main option in index.html*/
-.box1,.box2 {
-    width: 40vw;
-    height: 60vh;
-    display: inline-block;
-}
-/*Styling for h2 in the index.html*/
-.choice {
-    width: 40vw;
-    margin-top: 10vh;
-    position: absolute;
-    font-size: larger;
-    color: white;
-    font-size: 1.8rem;
-
-}
-.optionsImage {
-    margin-top: 30vh;
-    width: 80%;
-    height: 80%;
-}
-
-.footer {
-    text-align: center;
-    padding: 0;
-    margin: 0%;
-}
-
-.main-btn {
-    width: 15vw;
-    margin: auto;
-    cursor: pointer;
-    background: rgba(139,87,77,0.9780287114845938) ;
-    border-radius: 15px;
-    color: #FFF;
-    padding: 10px;
-    font-size: 20px;
-    display: block;
-    text-align: center;
-}
-
-.contactContainer {
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-/*Css for for choosing-border on the photos in the features*/
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea,
-#contact button[type="submit"] {
-    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
-}
-
-#contact {
-    background: #F9F9F9;
-    padding: 25px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-#contact h3 {
-    display: block;
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-
-.button2 {
-    cursor: pointer;
-    background: rgba(139,87,77,0.9780287114845938) ;
-    color: #FFF;
-    padding: 10px;
-    font-size: 20px;
-    display: block;
-    text-align: center;
-    margin-top: 20vh;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea {
-    width: 100%;
-    border: 1px solid #ccc;
-    background: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border: 1px solid #aaa;
-}
-
-#contact textarea {
-    height: 100px;
-    max-width: 100%;
-    resize: none;
-}
-
-#contact button[type="submit"] {
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    background: #4CAF50;
-    color: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-    font-size: 15px;
-}
-
-#contact button[type="submit"]:hover {
-    background: #43A047;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
+        <div class="box1">
+            <h2 class="choice">Choose one of our eCards!</h2>
+            <div>
+                <a href="choosecard.html"><img class="optionsImage" src="https://image.freepik.com/free-vector/merry-christmas-tree-with-lettering-decoration_23-2148386159.jpg"></a>
+            </div>
+        </div>
 
 
-#contact input:focus,
-#contact textarea:focus {
-    outline: 0;
-    border: 1px solid #aaa;
-}
+        <div class="box2">
+            <h2 class="choice">Choose your own image eCard!</h2>
+            <div>
+                <a href="linkcard.html"><img class="optionsImage" src="https://cf.ltkcdn.net/family/images/std/200821-425x283-family.jpg"></a>
 
-::-webkit-input-placeholder {
-    color: #888;
-}
+            </div>
+        </div>
+    </div>
+    <p class="share">Did you enjoy our webpage? Sharing is caring!</p>
+    <div class="fb-share-button" data-href="https://nicklausdim.github.io/E-card-Creator/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnicklausdim.github.io%2FE-card-Creator%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+    <a class="hitCounter" href="https://visitorshitcounter.com/" target="_blank" title="Hit counter" data-name="d365eb21685d43c4c5c42fb21055ce53|5|page|11|#ea5050|#ffffff|small|s-hit">Hit Counter</a><script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");</script>
 
-:-moz-placeholder {
-    color: #888;
-}
+    <div class="footer">
+        <div>
+            <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="aboutus.html"><li>About us</li></a>
+            <a href="contactus.html"><li>Contact us</li></a>
+            </ul>
+        </div>
+    </div>
 
-::-moz-placeholder {
-    color: #888;
-}
-
-:-ms-input-placeholder {
-    color: #888;
-}
-
-.thankYouImage {
-    height: 50vh;
-    width: 70vw;
-    margin-left: 15%; 
-    margin-bottom: 5%;
-}
-#thankyou {
-    text-align: center;
-}
-
-
-.img-choice {
-    height: 10%;
-    width: 10%;
-    margin: 10px;
-    margin-left: 8vw;
-    margin-top: 5vh;
-}
-.img-choice:hover {
-    transition: 0.08s;
-    transition-timing-function: ease-in-out;
-    border: #a50606 2px solid;
-    outline: none;
-}
-
-input[type="text"]:focus,
-select:focus,
-textarea:focus,
-.img-choice:hover,
-.border-choice:hover {
-    transition: 0.08s;
-    transition-timing-function: ease-in-out;
-    border: #a50606 2px solid;
-    outline: none;
-}
-/*style of the form on the linkcard.html*/
-.to{
-font-size: 1.2rem;
-margin-left: 35%;
-margin-top: 5vh;
-}
-.to2{
-    border: 1px solid black;
-    background-color: rgb(17, 16, 16);
-}
-
-.updateButton {
-    font-size: 1.2rem;
-margin-left: 35%;
-margin-top: 5vh;
-border-radius: 2%;
-background: rgba(139,87,77,0.9780287114845938) ;
-}
-
-/*style for previewing the ecard*/
-#front-pvw-card,
-#back-pvw-card {
-    margin: auto auto auto auto;
-    position: relative;
-    width: 40vw;
-    height: 25vw;
-    background-color: wheat;
-    word-wrap: break-word;
-    background-size: 100% 100%;
-    border: 2px solid black;
-}
-#front-msg-pvw {
-    position: absolute;
-    left: 20px;
-    margin-top: 2%;
-    font-size: 2em;
-    color: #da2222;
-    text-shadow: 2px 2px #0f307d;
-    word-wrap: break-word;
-}
-#back-message {
-    height: 35%;
-    width: 30%;
-    border: 2px solid black;
-    background-color: wheat;
-}
-
-#back-pvw-card {
-    background-color: wheat;
-    display: flex;
-    font-size: 1.2vw;
-    border: solid black 2px;
-}
-
-#right-side,
-#left-side {
-    width: 50%;
-    background-color: wheat;
-    margin: 2% auto;
-}
-
-#right-side {
-    position: relative;
-    margin-right: 2%;
-}
-
-#left-side {
-    margin-left: 2%;
-}
-
-#back-msg-pvw {
-    height: 90%;
-    margin-top: 5%;
-    word-wrap: break-word;
-
-}
-
-#sender,
-#recipient {
-    position: absolute;
-    height: 10%;
-    width: 80%;
-    margin: 5%;
-    border-bottom: solid red 1px;
-}
-
-#sender {
-    top: 10%;
-}
-
-#recipient {
-    top: 35%;
-}
-
-#back-form{
-    margin-right: 2vw;
-}
-
-h1,h2 {
-    font-size: 1.2rem;
-    text-align: center;
-}
-.img-category{
-    font-family: 'Rochester', cursive;
-}
-.first-step-header{
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 15px;
-    width: 30vw;
-    margin: auto;
-    font-size: 1.5rem;
-}
-
-form {
-    padding: 10px;
-    background-color: #19752096;
-    width: 30%;
-    height: 50%;
-    padding-bottom: 20px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 5px 10px black;
-}
-
-fieldset {
-    border: 1px solid #000000;
-    margin-top: 15px;
-    color: #000000;
-
-}
-
-label {
-    width: 30%;
-    font-weight: 400;
-    font-size: 0.5rem;
-    color: #0a0a0a;
-}
-
-input,
-#cities {
-    margin-bottom: 10px;
-    width: 30%;
-    height: 50%;
-    border: none;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    background-color: transparent;
-}
-
-
-.form-row {
-    display: flex;
-    justify-content: space-between;
-}
-
-#submit {
-    display: block;
-    margin: 20px auto 0 auto;
-    background-image: linear-gradient(90deg, #0b0d0f, #379237);
-    color: white;
-    font-weight: 600;
-}
-
-#register {
-    display: flex;
-    justify-content: center;
-}
-
-#register>img {
-    height: 511px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    box-shadow: 5px 10px black;
-}
-
-@media (max-width:993px) {
-    #register>img {
-        display: none;
-    }
-}
-
-.aboutustext{
-    background: rgb(180,149,117);
-    background: linear-gradient(203deg, rgb(189, 174, 159) 20%, rgba(139,87,77,0.9780287114845938) 43%);
-    width: 80vw;
-    height: 50vh;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-    padding: 5%;
-    opacity: 60%;
-}
-.about-us-text{
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 600;
-}
-
-#messageBox {
-    height: 10vh;
-}
-
-.fb-share-button {
-    margin-left: 46vw;
-    margin-top: 1vh;
-    margin-bottom: 20vh;
-}
-.share {
-    text-align: center;
-}
-.hitCounter {
-    height: 14px;
-}
+</body>
+</html>
