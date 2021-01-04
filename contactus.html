@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Create your E-card</title>
     <link rel="stylesheet" href="style.css">
+    <script async src="main.js"></script>
 </head>
 <body>
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="5xVHqdAw"></script>
     <div class="container">
         <div class="logo">
             <a href="index.html"><img src=".//images/404.png" alt="" width="130"/></a>
@@ -22,30 +21,52 @@
         </nav>
     </div>
 
-    <div class="welcomeLine">
-        <h3 class="title">Welcome to our eCard creator. Let´s create your eCard!</h3>
-    </div>
+    <label for="custom-url" class="to"><h2>Import your own link:</h2></label>
+    <input class="to" type="text" name="custom-url" id="custom-url" placeholder="Type URL Here...">
+    <input class="updateButton" type="button" onclick="addCustomURL()" value="Update">
 
-    <div class="options">
-
-        <div class="box1">
-            <h2 class="choice">Choose one of our eCards!</h2>
-            <div>
-                <a href="choosecard.html"><img class="optionsImage" src="https://image.freepik.com/free-vector/merry-christmas-tree-with-lettering-decoration_23-2148386159.jpg"></a>
-            </div>
-        </div>
-
-
-        <div class="box2">
-            <h2 class="choice">Choose your own image eCard!</h2>
-            <div>
-                <a href="linkcard.html"><img class="optionsImage" src="https://cf.ltkcdn.net/family/images/std/200821-425x283-family.jpg"></a>
-
-            </div>
+    <br>
+    <div>
+        <h2>Here is a preview of your card!</h2>
+        <div id="front-pvw-card">
+            <p id="front-msg-pvw"></p>
         </div>
     </div>
-    <p class="share">Did you enjoy our webpage? Sharing is caring!</p>
-    <div class="fb-share-button" data-href="https://nicklausdim.github.io/E-card-Creator/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnicklausdim.github.io%2FE-card-Creator%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+    <h2>Now let´s create the back of your card!</h2>
+
+    <section>
+        <div id="back-form">
+            <label for="from" class="to">From:</label>
+            <input class="to" type="text" name="from" id="from" placeholder="Sender">
+            <br><br><br>
+            <label for="to" class="to">To:</label>
+            <input class="to" type="text" name="to" id="to" placeholder="Recipient">
+            <br><br><br>
+            <label for="back-message" class="to">Write your message:</label>
+            <br>
+            <textarea name="back-message" id="back-message" class="to" placeholder="Your message..."></textarea>
+        </div>
+        <div id="back-preview">
+            <h2>Your preview will be here:</h2>
+            <div id="back-pvw-card">
+                <div id="left-side">
+                    <p id="back-msg-pvw"></p>
+                </div>
+
+                <div id="right-side">
+                    <h3>From:</h3>
+                    <div id="sender"></div>
+                    <br>
+                    <h3>To:</h3>
+                    <div id="recipient"></div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <a id="submit-btn" class="main-btn" href="result.html" onclick="generateCard()">Make my e-Card!</a>
+
+    </section>
+
 
     <div class="footer">
         <div>
@@ -53,6 +74,7 @@
             <a href="index.html"><li>Home</li></a>
             <a href="aboutus.html"><li>About us</li></a>
             <a href="contactus.html"><li>Contact us</li></a>
+
             </ul>
         </div>
     </div>
